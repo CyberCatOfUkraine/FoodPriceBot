@@ -36,7 +36,11 @@ namespace FoodPriceBot
                 case  "/fruits_and_vegetables":sendMessage(_products.GetFruitsAndVegetables()); break;
                 case  "/bakery_products":sendMessage(_products.GetBakeryProducts()); break;
                 case  "/eggs":sendMessage(_products.GetEggs()); break;
-                case  "/start": break;
+                case  "/start":
+                    _bot.DeleteMessageAsync(_e.Message.Chat.Id, _e.Message.MessageId, default);
+                    sendMessage("Введіть параметр...");
+                    break;
+                
                 default: sendMessage("Команда не розпізнана, повторіть спробу");break;
             }
 
