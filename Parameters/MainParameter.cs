@@ -16,6 +16,7 @@ namespace Parameters
         public static string FruitsAndVegetables => "фрукты+и+овощи";
         public static string BakeryProducts => "хлебо-булочные";
         public static string Eggs => "яйца";
-        
+        public static string token => "1088116626:AAFNnbLaLwvUgFfhACdZfDyJjfuwD99UdPI";
+
     }
 }

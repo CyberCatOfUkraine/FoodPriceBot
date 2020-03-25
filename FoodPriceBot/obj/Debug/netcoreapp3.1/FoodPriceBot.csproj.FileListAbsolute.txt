@@ -18,3 +18,5 @@
 /home/kot/RiderProjects/FoodPriceBot/FoodPriceBot/bin/Debug/netcoreapp3.1/DAL.pdb
 /home/kot/RiderProjects/FoodPriceBot/FoodPriceBot/bin/Debug/netcoreapp3.1/Parameters.pdb
 /home/kot/RiderProjects/FoodPriceBot/FoodPriceBot/obj/Debug/netcoreapp3.1/FoodPriceBot.csproj.CopyComplete
+/home/kot/RiderProjects/FoodPriceBot/FoodPriceBot/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/home/kot/RiderProjects/FoodPriceBot/FoodPriceBot/bin/Debug/netcoreapp3.1/Telegram.Bot.dll
