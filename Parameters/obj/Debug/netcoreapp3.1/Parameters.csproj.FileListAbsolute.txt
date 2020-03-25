@@ -1,0 +1,9 @@
+/home/kot/RiderProjects/FoodPriceBot/Parameters/bin/Debug/netcoreapp3.1/Parameters.deps.json
+/home/kot/RiderProjects/FoodPriceBot/Parameters/bin/Debug/netcoreapp3.1/Parameters.dll
+/home/kot/RiderProjects/FoodPriceBot/Parameters/bin/Debug/netcoreapp3.1/Parameters.pdb
+/home/kot/RiderProjects/FoodPriceBot/Parameters/obj/Debug/netcoreapp3.1/Parameters.csprojAssemblyReference.cache
+/home/kot/RiderProjects/FoodPriceBot/Parameters/obj/Debug/netcoreapp3.1/Parameters.csproj.CoreCompileInputs.cache
+/home/kot/RiderProjects/FoodPriceBot/Parameters/obj/Debug/netcoreapp3.1/Parameters.AssemblyInfoInputs.cache
+/home/kot/RiderProjects/FoodPriceBot/Parameters/obj/Debug/netcoreapp3.1/Parameters.AssemblyInfo.cs
+/home/kot/RiderProjects/FoodPriceBot/Parameters/obj/Debug/netcoreapp3.1/Parameters.dll
+/home/kot/RiderProjects/FoodPriceBot/Parameters/obj/Debug/netcoreapp3.1/Parameters.pdb

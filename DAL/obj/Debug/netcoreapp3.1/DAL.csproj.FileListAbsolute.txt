@@ -1,0 +1,12 @@
+/home/kot/RiderProjects/FoodPriceBot/DAL/bin/Debug/netcoreapp3.1/DAL.deps.json
+/home/kot/RiderProjects/FoodPriceBot/DAL/bin/Debug/netcoreapp3.1/DAL.dll
+/home/kot/RiderProjects/FoodPriceBot/DAL/bin/Debug/netcoreapp3.1/DAL.pdb
+/home/kot/RiderProjects/FoodPriceBot/DAL/bin/Debug/netcoreapp3.1/Parameters.dll
+/home/kot/RiderProjects/FoodPriceBot/DAL/bin/Debug/netcoreapp3.1/Parameters.pdb
+/home/kot/RiderProjects/FoodPriceBot/DAL/obj/Debug/netcoreapp3.1/DAL.csprojAssemblyReference.cache
+/home/kot/RiderProjects/FoodPriceBot/DAL/obj/Debug/netcoreapp3.1/DAL.csproj.CoreCompileInputs.cache
+/home/kot/RiderProjects/FoodPriceBot/DAL/obj/Debug/netcoreapp3.1/DAL.AssemblyInfoInputs.cache
+/home/kot/RiderProjects/FoodPriceBot/DAL/obj/Debug/netcoreapp3.1/DAL.AssemblyInfo.cs
+/home/kot/RiderProjects/FoodPriceBot/DAL/obj/Debug/netcoreapp3.1/DAL.csproj.CopyComplete
+/home/kot/RiderProjects/FoodPriceBot/DAL/obj/Debug/netcoreapp3.1/DAL.dll
+/home/kot/RiderProjects/FoodPriceBot/DAL/obj/Debug/netcoreapp3.1/DAL.pdb
