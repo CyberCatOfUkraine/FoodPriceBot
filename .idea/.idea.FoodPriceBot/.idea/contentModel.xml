@@ -20,10 +20,6 @@
       <e p="FoodPriceBot.sln" t="IncludeFlat" />
       <e p="PL" t="IncludeRecursive">
         <e p="PL.csproj" t="IncludeRecursive" />
-        <e p="ProductActions" t="Include">
-          <e p="Grocery.cs" t="Include" />
-          <e p="IProductAction.cs" t="Include" />
-        </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />

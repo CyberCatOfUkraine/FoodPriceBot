@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 
 namespace PL
 {
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class Worker : BackgroundService
     {
         private readonly ILogger<Worker> _logger;
@@ -20,7 +21,7 @@ namespace PL
             while (!stoppingToken.IsCancellationRequested)
             {
                 _logger.LogInformation("Alive at: {time}", DateTimeOffset.Now);
-                await Task.Delay(5000, stoppingToken);
+                await Task.Delay(20*1000, stoppingToken);
             }
         }
     }

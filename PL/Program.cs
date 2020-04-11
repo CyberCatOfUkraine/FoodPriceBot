@@ -10,35 +10,35 @@ using Telegram.Bot.Args;
 
 namespace PL
 {
-    public class Program
+    public static class Program
     {
-        private static readonly TelegramBotClient _bot = new TelegramBotClient(MainParameter.token);
-        private static readonly Products _products = new Products();
+        private static readonly TelegramBotClient Bot = new TelegramBotClient(MainParameter.token);
+        private static readonly Products Products = new Products();
         private static MessageEventArgs _e;
-        private static readonly Dictionary<string, string> _actions = new Dictionary<string, string>();
+        private static readonly Dictionary<string, string> Actions = new Dictionary<string, string>();
 
         public static void Main(string[] args)
         {
             InitializeDictionary();
-            _bot.StartReceiving();
-            _bot.OnMessage += Bot_OnMessage;
-            _bot.OnMessageEdited += Bot_OnMessage;
+            Bot.StartReceiving();
+            Bot.OnMessage += Bot_OnMessage;
+            Bot.OnMessageEdited += Bot_OnMessage;
             CreateHostBuilder(args).Build().Run();
         }
 
         private static void InitializeDictionary()
         {
-            _actions.Add("/grocery", _products.GetGrocery());
-            _actions.Add("/canned_food", _products.GetCannedFood());
-            _actions.Add("/dairy_products", _products.GetDairyProducts());
-            _actions.Add("/meat_products", _products.GetMeatProducts());
-            _actions.Add("/drinks", _products.GetDrinks());
-            _actions.Add("/fish_and_seafood", _products.GetFishAndSeafood());
-            _actions.Add("/sauces_and_spices", _products.GetSaucesAndSpices());
-            _actions.Add("/fruits_and_vegetables", _products.GetFruitsAndVegetables());
-            _actions.Add("/bakery_products", _products.GetBakeryProducts());
-            _actions.Add("/eggs", _products.GetEggs());
-            _actions.Add("/start", "Введіть параметр...");
+            Actions.Add("/grocery", Products.GetGrocery());
+            Actions.Add("/canned_food", Products.GetCannedFood());
+            Actions.Add("/dairy_products", Products.GetDairyProducts());
+            Actions.Add("/meat_products", Products.GetMeatProducts());
+            Actions.Add("/drinks", Products.GetDrinks());
+            Actions.Add("/fish_and_seafood", Products.GetFishAndSeafood());
+            Actions.Add("/sauces_and_spices", Products.GetSaucesAndSpices());
+            Actions.Add("/fruits_and_vegetables", Products.GetFruitsAndVegetables());
+            Actions.Add("/bakery_products", Products.GetBakeryProducts());
+            Actions.Add("/eggs", Products.GetEggs());
+            Actions.Add("/start", "Введіть параметр...");
         }
         
         private static IHostBuilder CreateHostBuilder(string[] args)
@@ -51,7 +51,7 @@ namespace PL
         {
             _e = e;
             var text = _e.Message.Text;
-            foreach (var (key, value) in _actions)
+            foreach (var (key, value) in Actions)
             {
                 if(key == text)
                     SendMessage(value);
@@ -61,7 +61,7 @@ namespace PL
 
         private static void SendMessage(string text)
         {
-            _bot.SendTextMessageAsync(_e.Message.Chat.Id, text);
+            Bot.SendTextMessageAsync(_e.Message.Chat.Id, text);
         }
     }
 }
