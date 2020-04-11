@@ -14,7 +14,7 @@
         "outputPath": "/home/kot/RiderProjects/FoodPriceBot/Parameters/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kot/.config/NuGet/NuGet.Config"
+          "/home/kot/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

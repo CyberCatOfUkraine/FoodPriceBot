@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Parameters
+﻿namespace Parameters
 {
     public static class MainParameter
     {
@@ -17,6 +15,5 @@ namespace Parameters
         public static string BakeryProducts => "хлебо-булочные";
         public static string Eggs => "яйца";
         public static string token => "1088116626:AAFNnbLaLwvUgFfhACdZfDyJjfuwD99UdPI";
-
     }
 }

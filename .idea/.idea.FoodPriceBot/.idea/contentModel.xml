@@ -17,19 +17,31 @@
           </e>
         </e>
       </e>
-      <e p="FoodPriceBot" t="IncludeRecursive">
-        <e p="FoodPriceBot.csproj" t="IncludeRecursive" />
+      <e p="FoodPriceBot.sln" t="IncludeFlat" />
+      <e p="PL" t="IncludeRecursive">
+        <e p="PL.csproj" t="IncludeRecursive" />
+        <e p="ProductActions" t="Include">
+          <e p="Grocery.cs" t="Include" />
+          <e p="IProductAction.cs" t="Include" />
+        </e>
         <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Worker.cs" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="mono_crash.mem.21362.1.blob" t="Include" />
+        <e p="mono_crash.mem.21477.1.blob" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="FoodPriceBot.AssemblyInfo.cs" t="Include" />
+              <e p="PL.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
       </e>
-      <e p="FoodPriceBot.sln" t="IncludeFlat" />
       <e p="Parameters" t="IncludeRecursive">
         <e p="MainParameter.cs" t="Include" />
         <e p="Parameters.csproj" t="IncludeRecursive" />

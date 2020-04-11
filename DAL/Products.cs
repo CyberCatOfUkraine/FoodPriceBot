@@ -1,16 +1,15 @@
-using System;
-using DAL;
 using Parameters;
 
 namespace DAL
 {
     public class Products
     {
-        FullProductPage _productPage=new FullProductPage();
+        private readonly FullProductPage _productPage = new FullProductPage();
+
         public string GetGrocery()
         {
             var product = _productPage.GetProductPageText(MainParameter.Grocery).Trim();
-           
+
             product = product.Replace("Крупы", "Крупи:\n");
             product = product.Replace("Макароны", "\nМакарони:\n");
             product = product.Replace("Масло", "\nОлія:\n");
@@ -30,7 +29,7 @@ namespace DAL
 
         public string GetDairyProducts()
         {
-        var product = _productPage.GetProductPageText(MainParameter.DairyProducts);
+            var product = _productPage.GetProductPageText(MainParameter.DairyProducts);
             product = product.Replace("\nЙогурт\n", "Йогурт:\n");
             product = product.Replace("Кефир\n", "\nКефір:\n");
             product = product.Replace("Маргарин\n", "\nМаргарин:\n");
@@ -47,12 +46,12 @@ namespace DAL
         public string GetMeatProducts()
         {
             var product = _productPage.GetProductPageText(MainParameter.MeatProducts);
-                product = product.Replace("Колбасы", "Ковбаси:\n");
-                product = product.Replace(" Мясные деликатесы", "\nМʼясні делікатеси:\n");
-                product = product.Replace("Мясо\n", "\nМʼясо:\n");
-                product = product.Replace("Сало\n", "\nСало\n");
-                product = product.Replace("Сосиски и сардельки", "\nСосиски та сардельки:\n");
-                return product;
+            product = product.Replace("Колбасы", "Ковбаси:\n");
+            product = product.Replace(" Мясные деликатесы", "\nМʼясні делікатеси:\n");
+            product = product.Replace("Мясо\n", "\nМʼясо:\n");
+            product = product.Replace("Сало\n", "\nСало\n");
+            product = product.Replace("Сосиски и сардельки", "\nСосиски та сардельки:\n");
+            return product;
         }
 
         public string GetDrinks()
@@ -108,6 +107,5 @@ namespace DAL
             product = product.Replace("Яйца", "Яйця:\n");
             return product;
         }
-
     }
 }

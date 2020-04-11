@@ -3401,7 +3401,7 @@
       "outputPath": "/home/kot/RiderProjects/FoodPriceBot/DAL/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/kot/.config/NuGet/NuGet.Config"
+        "/home/kot/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
