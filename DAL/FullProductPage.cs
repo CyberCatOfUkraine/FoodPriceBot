@@ -1,4 +1,5 @@
-﻿using HtmlAgilityPack;
+﻿using System.Linq;
+using HtmlAgilityPack;
 using Parameters;
 
 namespace DAL
@@ -7,7 +8,7 @@ namespace DAL
     {
         private readonly HtmlWeb _web = new HtmlWeb();
 
-        private HtmlNodeCollection getProductNodes(string product)
+        private HtmlNodeCollection GetProductNodes(string product)
         {
             var htmlDoc = _web.LoadFromWebAsync(MainParameter.MainSite + MainParameter.Products + product);
             var docResult = htmlDoc.Result;
@@ -17,15 +18,18 @@ namespace DAL
         public string GetProductPageText(string product)
         {
             var result = "";
-            foreach (var productChild in getProductNodes(product))
+            foreach (var productChild in GetProductNodes(product))
             {
                 var html = productChild.ChildNodes;
                 foreach (var node in html)
                     if (!node.HasChildNodes)
                         result += node.InnerText;
                     else
-                        foreach (var nodeChild in node.ChildNodes)
-                            result += " " + nodeChild.InnerText;
+                        for (var i = 0; i < node.ChildNodes.Count; i++)
+                        {
+                            var childNode = node.ChildNodes[i];
+                            result += (" " + childNode.InnerText);
+                        }
 
                 result = result.Replace("&nbsp", " ").Replace(" ;", "").Replace("грн", " грн");
             }
